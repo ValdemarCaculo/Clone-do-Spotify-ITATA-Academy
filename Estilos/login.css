@@ -1,0 +1,139 @@
+@import url(master.css);
+
+* {
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.btn-Continue {
+    margin-top: 1.2rem;
+
+}
+
+.container header h1 {
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 400;
+
+}
+
+.container form div label {
+    background-color: red;
+    margin-bottom: 7px;
+
+}
+
+
+#btn:hover {
+    background-color: #49bd71;
+    color: var(--cor-textos);
+    padding: 18.5px;
+
+
+}
+
+
+p {
+    margin: 0.9rem;
+}
+
+.btn-Continue button {
+    color: var(--cor-fundo-escuro);
+    background-color: var(--cor-principal-spotify);
+    padding: 15px;
+    width: 20rem;
+    border-radius: 30px;
+    font-size: medium;
+    cursor: pointer;
+    border: none;
+    transition: 0.20s;
+
+}
+
+.container {
+
+    width: 400px;
+    height: 500px;
+    margin: 25px auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: var(--cor-fundo-escuro);
+    position: relative;
+
+
+
+}
+
+#logo {
+    display: inline-block;
+    margin-top: 5rem;
+    width: 35px;
+}
+
+.container ul li {
+    margin: 8px;
+    list-style: none;
+
+}
+
+.container ul li button {
+    color: var(--cor-textos);
+    border: var(--cor-de-fundo) 1.5px solid;
+    background: none;
+    padding: 15px;
+    width: 20rem;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: medium;
+}
+
+
+
+
+body .container hr {
+    margin: 2.5rem auto;
+    width: 70%;
+
+
+}
+
+body .container h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.container section div {
+
+    height: 2.6rem;
+}
+
+.container form div label {
+    display: block;
+
+    text-align: left;
+    margin-left: 28%;
+}
+
+.container form div input {
+
+    color: var(--cor-de-fundo);
+    border: var(--cor-de-fundo) 1.5px solid;
+    background: none;
+    padding: 15px;
+    border-radius: 5px;
+    width: 20rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container form {
+
+
+    justify-content: center;
+
+}

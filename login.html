@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Spotify</title>
+    <script src="https://kit.fontawesome.com/d0b7ecb575.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Estilos/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <img id="logo" src="./Imagens/Spotify_Primary_Logo_RGB_White.png" alt="">
+
+    <div class="container">
+
+
+        <header>
+            <h1>Welcome back</h1>
+        </header>
+        <form>
+            <div>
+                <label for="title">Email or username</label>
+
+            </div>
+            <div>
+                <input type="text" required>
+            </div>
+            <div class="btn-Continue">
+                <button id="btn">Continue</button>
+            </div>
+
+        </form>
+
+
+        <p>or</p>
+
+        <ul>
+            <li>
+                <a
+                    href="https://accounts.google.com/v3/signin/identifier?opparams=%253F&dsh=S-1157222987%3A1760649050826947&access_type=offline&client_id=1046568431490-ij1gi5shcp2gtorls09frkc56d4mjbe2.apps.googleusercontent.com&o2v=2&redirect_uri=https%3A%2F%2Faccounts.spotify.com%2Flogin%2Fgoogle%2Fredirect&response_type=code&scope=profile+email+openid&service=lso&state=AQB%2BLYoqtpI8mhj3haqZDtAxrx73Bo9Cc22vk9gWF5fKpkMi%2BQ8jDTeItPLad2%2BXZOOWVDJOQhLJewsg4PY%2Boq%2FSjVNCsLiUGKw1saU16dOmX%2B%2FjNFtGHacF4jpXHTPWX482b8gY0GAWHXJ55exoKfubg6pTvCBJBjJLFCemjbLPWA6988lLa262E%2FWwFEpBMkqh9tAex0G%2FtORQ%2B7okXqlMfehp9aEtGoRgqpndkv%2BplsYq1PBPE6Ogpdi9pQdVFrzPc0x6ADr%2F8AkvL6a2K1xetMBMg8Opzu0VgoIh%2FFTPoyr0zn1M8cMFvxBW8jgl0tAIBHiUdINfCBlF1YKscVwOlJD2uP%2FXheaFbtlk3hQvacImss1LFEE8egNtEVA3tmB9aTtDmk6dYy%2Bu79tWE9TOTbQlZy9Xy4EuRJP0kU4eczJFolO20nrI4x%2Fu&flowName=GeneralOAuthFlow&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hANmp0pjDUxFTijQFXqG-iKbtgkIsOrYPmY94deoBpGQxCBc3IAIWQ7QfFpWti3-j1bafeDgJmOXBnGL597MuDmooLI3As6sufJQfg-vS41vXrW8ysnJWCBPu4FmQuKyoCH4Xq3GKP2BV6CW7nzgZbyg_jyJhJE-XhSCCGAsUJTB_uzdarWGkZHMzNhdnR-lmstqCwIEd5n_ukCmJBM7hFRP-LV8OHufrPmbek76s2Yl0Mzyggri0xJYtDHHFDK6rqkSfhbou9SsLXjLYI6P7aF655o8WCMBklS63jB55vmh6auJawiTyo2Htg41PuwchqEgyuhDEjoPw7YOEtmKCXK-aj7GTS_NDfPoljxxoVZjenHqb_jMAOUzx6ttDiS_461aAUqZJB1xeTxywjDA56Cplk-Y0asI0CxfaaOH0sczajchxuXiB4zL0ftb46OYkXaTePCaGVQ2_gHHLYafHHjzzaMd3XKvgwt_-DXOWOYlKBMxlR8%26flowName%3DGeneralOAuthFlow%26as%3DS-1157222987%253A1760649050826947%26client_id%3D1046568431490-ij1gi5shcp2gtorls09frkc56d4mjbe2.apps.googleusercontent.com%23&app_domain=https%3A%2F%2Faccounts.spotify.com&rart=ANgoxcfFhsbxzn6u6qvBF-Asl9kmrzSsvfVNIfDIN-13fc3qZXahUmjjkcKCx5fPYsy1WruWG8X3Rzy8veGnF4tlmKufxlQzmLFTBQ_MPJ5u71pTGiFIpAk">
+                    <button>
+                        <i class="fa-brands fa-google"></i>
+                        <span>Continue whit Google</span>
+                    </button>
+                </a>
+
+            </li>
+
+            <li>
+                <a
+                    href="https://www.facebook.com/login.php?skip_api_login=1&api_key=174829003346&kid_directed_site=0&app_id=174829003346&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv23.0%2Fdialog%2Foauth%3Fclient_id%3D174829003346%26state%3DAQA9teB9S5B5D9b7O9rkLHP%252BzrYSvela8rNp1chClWagnqjS8sz6ILmxZLLuZXB5bH5ip3joPFmZloyn7gPmsoZC6RGY%252FchoKjtiHZs2ciEwV%252BdLNSeVMaXHWHkaYAjhXD5i3S8ahuy0PYZJLm2GbvP42JS8VsMWpNmTtiZTAHDp1rT1NHdxm0o6N3RNOUxrnQAQfKMbmnkZ8khk43HAq61IK793vfsj%252FtRep4q0rG6vR2xAenNGnnmW1NL%252FJjJPZg1NJ6%252F%252FCVvcmn%252FTZAQ7ThcuPsz%252BWvCTbLOFKzuE7Azu7zbJijCDRPJYM9vJXi6KD5B06Uaawv2It%252BMxTzL6vxzHhMMv1JmJ6M%252FnZgnRrShHoDMkmtTDytEh7YCylBsyy8JihVSrCSm0fKCCSS8kFXvIva9jBK0yXZijkMxFNajee6kgKfR3Xy1Kv6JL%26redirect_uri%3Dhttps%253A%252F%252Faccounts.spotify.com%252Flogin%252Ffacebook%252Fredirect%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Dd9b63f97-aad0-467e-82c9-93ad271d80a8%26tp%3Dunspecified&cancel_url=https%3A%2F%2Faccounts.spotify.com%2Flogin%2Ffacebook%2Fredirect%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DAQA9teB9S5B5D9b7O9rkLHP%252BzrYSvela8rNp1chClWagnqjS8sz6ILmxZLLuZXB5bH5ip3joPFmZloyn7gPmsoZC6RGY%252FchoKjtiHZs2ciEwV%252BdLNSeVMaXHWHkaYAjhXD5i3S8ahuy0PYZJLm2GbvP42JS8VsMWpNmTtiZTAHDp1rT1NHdxm0o6N3RNOUxrnQAQfKMbmnkZ8khk43HAq61IK793vfsj%252FtRep4q0rG6vR2xAenNGnnmW1NL%252FJjJPZg1NJ6%252F%252FCVvcmn%252FTZAQ7ThcuPsz%252BWvCTbLOFKzuE7Azu7zbJijCDRPJYM9vJXi6KD5B06Uaawv2It%252BMxTzL6vxzHhMMv1JmJ6M%252FnZgnRrShHoDMkmtTDytEh7YCylBsyy8JihVSrCSm0fKCCSS8kFXvIva9jBK0yXZijkMxFNajee6kgKfR3Xy1Kv6JL%23_%3D_&display=page&locale=en_US&pl_dbl=0">
+                    <button>
+                        <i class="fa-brands fa-facebook"></i>
+                        <span>Continue whit Facebook</span>
+                    </button>
+                </a>
+
+            </li>
+
+            <li>
+                <a href="https://appleid.apple.com/auth/authorize?response_type=code&response_mode=form_post&client_id=com.spotify.accounts&state=AQCYEiYdOmrbNEKFwOX7UuJ7tCkGhckKyk19CqFDXx%2BoaqAq9fXawJJtD99OnJ%2B%2BTSLOTV4iHyPXfBbSxjFSTjrABRU06NmINZxWj%2FLkJXiNQDK3y3PVwmi6Pe%2FB%2FiP1gXj81Xk8e3E9KHize1whbObhxwXgvE5mBpxNLt3ImSa8MM6etfRcdTqewJo6OpmPQwZ4OazF6bcbBZRqm4OmAk39KQByop3KhnyCPQ9YvugKcNeOHVsrhQC1IpkVfJmdAqNWOVZZal%2BY6%2BgHFCEkob9MzsMBerbT8AHq8%2B6OOxYU8S9iivi9xGmSjvEXIFcCOD7hpGhAMBstfXt3s%2BeMc1T%2FP%2BIp06JOUwlIHGqg8qcA8WX2ouM5IsprAML%2FpSdHKKFeiYDP4oBf5vNtwXw%2Fr5vUj72aRufcOKLuDDrvmuwQ4lIcnD7x5Ik%2FZeC1&scope=name+email&redirect_uri=https%3A%2F%2Faccounts.spotify.com%2Flogin%2Fapple%2Fredirect">
+                    <button>
+                    <i class="fa-brands fa-apple"></i>
+                    <span>Continue whit Apple</span>
+                </button>
+                </a>
+                
+            </li>
+        </ul>
+
+        <footer>
+            <div>
+                <span>Don't have an account?</span>
+                <span>Sign up for Spotify</span>
+            </div>
+        </footer>
+
+
+    </div>
+
+    <footer>
+        <div>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</div>
+    </footer>
+
+</body>
+
+</html>
