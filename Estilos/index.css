@@ -1,1 +1,33 @@
+
 @import url(master.css);
+
+.primary-header{
+    display: flex;
+    background-color: var(--cor-principal-spotify);
+    position: relative;
+    
+}
+.primary-header ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+}
+.primary-header ul li i{
+    font-size: 35px;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+.sidebar{
+    display: flex;
+    width: 350px;
+    background-color: var(--cinza);
+    padding: 24px;
+    padding-bottom: 90px;
+    flex-direction: column;
+}
+
+
