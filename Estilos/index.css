@@ -1,33 +1,113 @@
-
 @import url(master.css);
 
-.primary-header{
-    display: flex;
-    background-color: var(--cor-principal-spotify);
-    position: relative;
-    
-}
-.primary-header ul{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    list-style: none;
-}
-.primary-header ul li i{
-    font-size: 35px;
+.icons {
+    width: 40px;
+    height: auto;
 }
 
-.container{
+.container {
     display: flex;
-    height: 100vh;
+    box-sizing: border-box;
+
+
 }
-.sidebar{
-    display: flex;
-    width: 350px;
+
+.container header {
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: var(--cinza);
-    padding: 24px;
-    padding-bottom: 90px;
-    flex-direction: column;
+    height: 4rem;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
 }
 
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    /* evita que tudo fique esticado em telas grandes */
+    padding: 0 20px;
+    box-sizing: border-box;
 
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-content button {
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.icons-btn {
+    width: 27px;
+}
+
+hr {
+    display: flex;
+    height: 25px;
+}
+
+.primary-section {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 350px;
+    background: var(--cinza);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+main {
+    display: flex;
+    gap: 10px;
+    height: 100vh;
+    border-radius: 10px;
+    margin-top: 4.5rem;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.primary-section-title {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 8px;
+    background-color: red;
+    height: 70px;
+}
+
+.primary-section-title a {
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--cor-de-fundo);
+}
+
+.secound-section {
+    margin-top: 10px;
+    background-color: var(--cinza);
+    padding: 20px;
+    border-radius: 10px;
+    flex-grow: 1;
+}
