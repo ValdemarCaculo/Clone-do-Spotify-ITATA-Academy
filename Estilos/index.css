@@ -1,7 +1,28 @@
 @import url(master.css);
 
-.icons {
+:root {
+
+    --fundo-preto: #050505;
+
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+#logo,
+#home {
     width: 40px;
+    margin: 8px;
+}
+
+.icons {
+    width: 10px;
     height: auto;
 }
 
@@ -12,14 +33,35 @@
 
 }
 
+.meno-pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex: 1;
+    min-width: 250px;
+}
+
+.meno-pesquisa input {
+    flex-grow: 0.5;
+    min-width: 150px;
+    max-width: 100%;
+    padding: 19px;
+    background-color: var(--cor-de-fundo);
+    border: none;
+    border-radius: 30px;
+
+}
+
 .container header {
     padding: 0 20px;
+    flex-wrap: wrap;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--cinza);
-    height: 4rem;
+    background-color: var(--fundo-preto);
+
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
@@ -30,11 +72,33 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px;
-    /* evita que tudo fique esticado em telas grandes */
-    padding: 0 20px;
+    min-width: 1200px;
+    padding-left: 20px;
     box-sizing: border-box;
 
+}
+
+#download {
+
+    background: none;
+}
+
+.header-btn {
+    margin-left: auto;
+}
+
+.nav-footer a {
+    text-decoration: none;
+    gap: 4rem;
+    color: rgb(54, 54, 54);
+    margin-left: 30px;
+    padding-bottom: 20px;
+
+}
+
+.nav-footer {
+    margin-top: 50px;
+    display: block;
 }
 
 .nav-links {
@@ -46,7 +110,8 @@
 }
 
 .header-content button {
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 1rem;
+    font-size: 17px;
     background-color: white;
     border: none;
     border-radius: 20px;
@@ -54,7 +119,7 @@
 }
 
 .icons-btn {
-    width: 27px;
+    width: 25px;
 }
 
 hr {
@@ -63,14 +128,15 @@ hr {
 }
 
 .primary-section {
-    margin-top: 10px;
-    margin-left: 10px;
-    width: 350px;
+
+    width: 480px;
     background: var(--cinza);
     border-radius: 10px;
-    padding: 20px;
-    box-sizing: border-box;
-    overflow: auto;
+    padding: 0 15px;
+    overflow-y: auto;
+    height: 280px;
+
+
 }
 
 main {
@@ -78,8 +144,45 @@ main {
     gap: 10px;
     height: 100vh;
     border-radius: 10px;
-    margin-top: 4.5rem;
+    height: calc(100vh - 4rem);
+    margin-top: 4rem;
+    overflow: hidden;
+    padding: 0 10px;
+    margin-top: 4rem;
+    overflow: hidden;
+    box-sizing: border-box;
 }
+
+
+main .playlist,
+.browser {
+    background-color: black;
+    margin: 20px 0;
+    padding: 15px 0;
+    gap: 7px;
+
+
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.header-btn {
+
+    margin-right: 0px;
+}
+
+main .playlist button,
+.browser button {
+    border-radius: 50px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+
+}
+
 
 a {
     text-decoration: none;
@@ -89,13 +192,15 @@ a {
 }
 
 .primary-section-title {
+    position: sticky;
+    top: 0;
+    background-color: var(--cinza);
     display: flex;
-    gap: 10px;
-    align-items: center;
     justify-content: space-between;
-    font-size: 8px;
-    background-color: red;
-    height: 70px;
+    align-items: center;
+    padding: 10px;
+    font-size: 16px;
+    z-index: 1;
 }
 
 .primary-section-title a {
@@ -105,9 +210,31 @@ a {
 }
 
 .secound-section {
-    margin-top: 10px;
     background-color: var(--cinza);
     padding: 20px;
     border-radius: 10px;
     flex-grow: 1;
+    overflow-y: auto;
+}
+
+
+.secound-section h1 {
+    font-size: 1.5rem;
+}
+
+.categorias {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.cartaz {
+    flex: 0 1 200px;
+    height: 10rem;
+    background-color: red;
+    border-radius: 10px;
+    box-sizing: border-box;
+
 }
