@@ -93,6 +93,7 @@ html {
     color: rgb(54, 54, 54);
     margin-left: 30px;
     padding-bottom: 20px;
+    flex-wrap: wrap;
 
 }
 
@@ -224,17 +225,29 @@ a {
 
 .categorias {
     display: flex;
-    gap: 20px;
+    gap: 30px;
+justify-content: center;
     flex-wrap: wrap;
-    justify-content: center;
+
 
 }
 
 .cartaz {
     flex: 0 1 200px;
-    height: 10rem;
+    height: 8rem;
     background-color: red;
     border-radius: 10px;
     box-sizing: border-box;
 
+}
+
+.footer-secound{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: left;
+    font-size: 12px;
+}
+.inf a{
+    display: block ;
 }
