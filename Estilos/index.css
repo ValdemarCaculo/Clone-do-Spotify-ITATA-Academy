@@ -1,10 +1,6 @@
 @import url(master.css);
 
-:root {
 
-    --fundo-preto: #050505;
-
-}
 
 body,
 html {
@@ -17,8 +13,9 @@ html {
 
 #logo,
 #home {
-    width: 40px;
+    width: 35px;
     margin: 8px;
+    padding: 3px;
 }
 
 .icons {
@@ -29,8 +26,6 @@ html {
 .container {
     display: flex;
     box-sizing: border-box;
-
-
 }
 
 .meno-pesquisa {
@@ -44,13 +39,69 @@ html {
 
 .meno-pesquisa input {
     flex-grow: 0.5;
-    min-width: 150px;
+    width: 200px;
     max-width: 100%;
-    padding: 19px;
+    padding: 15px;
     background-color: var(--cor-de-fundo);
     border: none;
     border-radius: 30px;
 
+}
+
+li {
+    padding-right: 0.1rem;
+    font-weight: bold;
+
+}
+
+li a {
+    font-weight: bold;
+    color: var(--cor-cinza-textos);
+}
+
+li a:hover {
+    color: var(--cor-textos);
+    font-size: large;
+
+}
+
+.header-btn button:hover {
+    font-size: larger;
+    color: var(--cor-textos);
+}
+
+.header-btn button a {
+    color: var(--cor-cinza-textos);
+    font-weight: bold;
+}
+
+.header-btn button #download:hover {
+
+    color: var(--cor-textos);
+}
+
+.btn-sign {
+    background: none;
+}
+
+.header-content button {
+    padding: 0.8rem 1rem;
+    font-size: 17px;
+    padding: 15px 25px;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.header-content .btn-sign {
+    background: none;
+    color: var(--cor-cinza-textos);
+    font-weight: bold;
+}
+
+.icons-btn {
+    width: 25px;
 }
 
 .container header {
@@ -61,7 +112,6 @@ html {
     left: 0;
     width: 100%;
     background-color: var(--fundo-preto);
-
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
@@ -79,7 +129,6 @@ html {
 }
 
 #download {
-
     background: none;
 }
 
@@ -110,22 +159,12 @@ html {
     margin: 0;
 }
 
-.header-content button {
-    padding: 0.8rem 1rem;
-    font-size: 17px;
-    background-color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-}
 
-.icons-btn {
-    width: 25px;
-}
 
 hr {
     display: flex;
     height: 25px;
+    margin: 0 5px 0;
 }
 
 .primary-section {
@@ -158,11 +197,9 @@ main {
 main .playlist,
 .browser {
     background-color: black;
-    margin: 20px 0;
+    margin: 1rem 0;
     padding: 15px 0;
     gap: 7px;
-
-
     background-color: black;
     color: white;
     border-radius: 10px;
@@ -211,8 +248,7 @@ a {
 }
 
 .secound-section {
-    background-color: var(--cinza);
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     flex-grow: 1;
     overflow-y: auto;
@@ -220,34 +256,398 @@ a {
 
 
 .secound-section h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    margin: 0 2rem;
+    padding: 20px 0;
+    margin-left: 1.2rem;
+
 }
 
 .categorias {
     display: flex;
-    gap: 30px;
-justify-content: center;
+    gap: 16px;
+    justify-content: center;
     flex-wrap: wrap;
-
-
-}
-
-.cartaz {
-    flex: 0 1 200px;
-    height: 8rem;
-    background-color: red;
-    border-radius: 10px;
     box-sizing: border-box;
 
 }
 
-.footer-secound{
+.secound-section .categorias .cartaz span {
+    display: flex;
+    font-weight: bold;
+    font-size: larger;
+    margin: 20px;
+}
+
+.cartaz {
+    flex: 0 1 200px;
+    height: 8.5rem;
+    border-radius: 10px;
+    box-sizing: border-box;
+    flex-basis: 15rem;
+    position: relative;
+}
+
+.cartaz:nth-of-type(1) {
+    background-color: rgb(220, 20, 140);
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.cartaz:nth-of-type(1)::after {
+    content: "";
+    /*Criar um espaco vazio onde ser inserido a imagem*/
+    position: absolute;
+    /*aqui o intem move se em relacao a heranca relativa do pai*/
+    width: 120px;
+    /*Determinar a largura do espaco */
+    height: 120px;
+    /*Determinar a altura do espaco */
+    right: -20px;
+    /*Movimentar o item vazio a direira */
+    bottom: -2px;
+    /*Movimentar o item vazio para baixo */
+    border-radius: 3px;
+    background-image: url(https://i.scdn.co/image/ab67fb8200005caf474a477debc822a3a45c5acb);
+    /*Inserir a imagem no espaco*/
+    background-size: cover;
+    /**/
+    transform: rotate(30deg);
+    /*Rodar a imagem */
+}
+
+.cartaz:nth-of-type(2) {
+    background-color: rgb(0, 100, 80);
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.cartaz:nth-of-type(2)::after {
+    content: ""; /*Criar um espaco vazio onde ser inserido a imagem*/
+    position: absolute;
+    /*aqui o intem move se em relacao a heranca relativa do pai*/
+    width: 120px;
+    /*Determinar a largura do espaco */
+    height: 120px;
+    /*Determinar a altura do espaco */
+    right: -20px;
+    /*Movimentar o item vazio a direira */
+    bottom: -2px;
+    /*Movimentar o item vazio para baixo */
+    border-radius: 3px;
+    background-image: url(https://i.scdn.co/image/ab6765630000ba8a81f07e1ead0317ee3c285bfa);
+    /*Inserir a imagem no espaco*/
+    background-size: cover;
+    /**/
+    transform: rotate(30deg);
+    /*Rodar a imagem */
+}
+
+.cartaz:nth-of-type(3) {
+    background-color: rgb(132, 0, 231);
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+
+}
+
+.cartaz:nth-of-type(4) {
+    background-color: rgb(30, 50, 100);
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.cartaz:nth-of-type(5) {
+    background-color: rgb(225, 51, 0);
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.cartaz:nth-of-type(6) {
+    background-color: rgb(140, 25, 50);
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.cartaz:nth-of-type(7) {
+    background-color: rgb(71, 125, 149);
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+
+}
+
+.cartaz:nth-of-type(8) {
+    background-color: rgb(71, 125, 149);
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.cartaz:nth-of-type(9) {
+    background-color: rgb(186, 93, 7);
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.cartaz:nth-of-type(10) {
+    background-color: rgb(141, 103, 171);
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+
+}
+
+.cartaz:nth-of-type(11) {
+    background-color: rgb(71, 125, 149);
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.cartaz:nth-of-type(12) {
+    background-color: rgb(80, 55, 80);
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+
+}
+
+.cartaz:nth-of-type(13) {
+    background-color: rgb(175, 40, 150);
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.cartaz:nth-of-type(14) {
+    background-color: rgb(220, 20, 140);
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.cartaz:nth-of-type(15) {
+    background-color: rgb(119, 119, 119);
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.cartaz:nth-of-type(16) {
+    background-color: rgb(71, 125, 149);
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.cartaz:nth-of-type(17) {
+    background-color: rgb(225, 17, 140);
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.cartaz:nth-of-type(18) {
+    background-color: rgb(233, 20, 41);
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.cartaz:nth-of-type(19) {
+    background-color: rgb(141, 103, 171);
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+
+}
+
+.cartaz:nth-of-type(20) {
+    background-color: rgb(13, 115, 236);
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+
+}
+
+.cartaz:nth-of-type(21) {
+    background-color: rgb(216, 64, 0);
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.cartaz:nth-of-type(22) {
+    background-color: rgb(0, 100, 80);
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.cartaz:nth-of-type(23) {
+    background-color: rgb(230, 30, 50);
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.cartaz:nth-of-type(24) {
+    background-color: rgb(30, 50, 100);
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.cartaz:nth-of-type(25) {
+    background-color: rgb(141, 103, 171);
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.cartaz:nth-of-type(26) {
+    background-color: rgb(81, 121, 161);
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.cartaz:nth-of-type(27) {
+    background-color: rgb(13, 115, 236);
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+
+}
+
+.cartaz:nth-of-type(28) {
+    background-color: rgb(20, 138, 8);
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.cartaz:nth-of-type(29) {
+    background-color: rgb(125, 75, 50);
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+
+}
+
+.cartaz:nth-of-type(30) {
+    background-color: blueviolet;
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+
+.footer-secound {
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
     justify-content: left;
     font-size: 12px;
 }
-.inf a{
-    display: block ;
+
+.inf a {
+    display: block;
 }
