@@ -11,24 +11,20 @@ html {
 
 
 }
-*::-webkit-scrollbar{
+
+*::-webkit-scrollbar {
     width: 8px;
     height: 100px;
 
 }
 
-.sections-primary:hover::-webkit-scrollbar-thumb{
- background-color: var(--cor-principal-spotify);
+.sections-primary:hover::-webkit-scrollbar-thumb {
+    background-color: var(--cor-principal-spotify);
 }
 
-.secound-section:hover ::-webkit-scrollbar-thumb{
- background-color: var(--cor-principal-spotify);
+.secound-section:hover ::-webkit-scrollbar-thumb {
+    background-color: var(--cor-principal-spotify);
 }
-
-.footer-secound{
-    height: 20rem;
-}
-
 
 
 #logo,
@@ -195,7 +191,8 @@ hr {
     padding: 0 15px;
     overflow-y: auto;
     height: 280px;
-    resize: horizontal; /**/
+    resize: horizontal;
+    /**/
 
 
 }
@@ -205,7 +202,7 @@ main {
     gap: 10px;
     height: 100vh;
     border-radius: 10px;
-   /* height: calc(100vh - 4rem);*/
+    /* height: calc(100vh - 4rem);*/
     margin-top: 4rem;
     overflow: hidden;
     padding: 0 10px;
@@ -288,7 +285,7 @@ a {
 .categorias {
     display: flex;
     gap: 16px;
-   /* justify-content: center;*/
+    /* justify-content: center;*/
     flex-wrap: wrap;
     box-sizing: border-box;
     width: 100%;
@@ -303,26 +300,25 @@ a {
 }
 
 .cartaz {
-    flex: 1 ;
+    flex: 1;
     height: 8.5rem;
     border-radius: 10px;
     box-sizing: border-box;
-    flex-basis: 15rem;
+    flex-basis: 16rem;
     position: relative;
-      width: 100%;
-      cursor: pointer;
- 
-}
-
-.cartaz:nth-of-type(1) {
-    background-color: rgb(220, 20, 140);
-    position: relative;
+    width: 100%;
+    cursor: pointer;
     color: white;
     min-width: 200px;
     min-height: 150px;
     overflow: hidden;
     padding: 20px;
 
+
+}
+
+.cartaz:nth-of-type(1) {
+    background-color: rgb(220, 20, 140);
 }
 
 .cartaz:nth-of-type(1)::after {
@@ -333,204 +329,116 @@ a {
     right: -20px;
     bottom: -2px;
     border-radius: 3px;
-    background-image: url(https://i.scdn.co/image/ab67fb8200005caf474a477debc822a3a45c5acb);
     background-size: cover;
     transform: rotate(30deg);
+    background-image: url(https://i.scdn.co/image/ab67fb8200005caf474a477debc822a3a45c5acb);
 
 }
 
 .cartaz:nth-of-type(2) {
     background-color: rgb(0, 100, 80);
-    position: relative;
-    color: white;
-    min-width: 200px;
-    min-height: 150px;
-    overflow: hidden;
-    padding: 20px;
+
 }
 
 .cartaz:nth-of-type(2)::after {
     content: "";
-    /*Criar um espaco vazio onde ser inserido a imagem*/
     position: absolute;
-    /*aqui o intem move se em relacao a heranca relativa do pai*/
     width: 100px;
-    /*Determinar a largura do espaco */
     height: 100px;
-    /*Determinar a altura do espaco */
     right: -20px;
-    /*Movimentar o item vazio a direira */
     bottom: -2px;
-    /*Movimentar o item vazio para baixo */
     border-radius: 3px;
-    background-image: url(https://i.scdn.co/image/ab6765630000ba8a81f07e1ead0317ee3c285bfa);
-    /*Inserir a imagem no espaco*/
     background-size: cover;
-    /**/
     transform: rotate(30deg);
-    /*Rodar a imagem */
+    background-image: url(https://i.scdn.co/image/ab6765630000ba8a81f07e1ead0317ee3c285bfa);
 }
 
 .cartaz:nth-of-type(3) {
     background-color: rgb(132, 0, 231);
-    position: relative;
-    color: white;
-    min-width: 200px;
-    min-height: 150px;
-    overflow: hidden;
-    padding: 20px;
+
 
 }
 
 .cartaz:nth-of-type(3)::after {
     content: "";
-    /*Criar um espaco vazio onde ser inserido a imagem*/
     position: absolute;
-    /*aqui o intem move se em relacao a heranca relativa do pai*/
     width: 100px;
-    /*Determinar a largura do espaco */
     height: 100px;
-    /*Determinar a altura do espaco */
     right: -20px;
-    /*Movimentar o item vazio a direira */
     bottom: -2px;
-    /*Movimentar o item vazio para baixo */
     border-radius: 3px;
-    background-image: url(https://concerts.spotifycdn.com/images/live-events_category-image.jpg);
-    /*Inserir a imagem no espaco*/
     background-size: cover;
-    /**/
     transform: rotate(30deg);
-    /*Rodar a imagem */
+    background-image: url(https://concerts.spotifycdn.com/images/live-events_category-image.jpg);
 }
 
 .cartaz:nth-of-type(4) {
     background-color: rgb(30, 50, 100);
-    position: relative;
-    color: white;
-    min-width: 200px;
-    min-height: 150px;
-    overflow: hidden;
-    padding: 20px;
 }
 
 .cartaz:nth-of-type(4)::after {
     content: "";
-    /*Criar um espaco vazio onde ser inserido a imagem*/
     position: absolute;
-    /*aqui o intem move se em relacao a heranca relativa do pai*/
     width: 100px;
-    /*Determinar a largura do espaco */
     height: 100px;
-    /*Determinar a altura do espaco */
     right: -20px;
-    /*Movimentar o item vazio a direira */
     bottom: -2px;
-    /*Movimentar o item vazio para baixo */
     border-radius: 3px;
-    background-image: url(https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/topic/pop/1McMsnEElThX1knmY4oliG/en);
-    /*Inserir a imagem no espaco*/
     background-size: cover;
-    /**/
     transform: rotate(30deg);
-    /*Rodar a imagem */
+    background-image: url(https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/topic/pop/1McMsnEElThX1knmY4oliG/en);
 }
 
 .cartaz:nth-of-type(5) {
     background-color: rgb(225, 51, 0);
-    position: relative;
-    color: white;
-    min-width: 200px;
-    min-height: 150px;
-    overflow: hidden;
-    padding: 20px;
 }
 
 .cartaz:nth-of-type(5)::after {
     content: "";
-    /*Criar um espaco vazio onde ser inserido a imagem*/
     position: absolute;
-    /*aqui o intem move se em relacao a heranca relativa do pai*/
     width: 100px;
-    /*Determinar a largura do espaco */
     height: 100px;
-    /*Determinar a altura do espaco */
     right: -20px;
-    /*Movimentar o item vazio a direira */
     bottom: -2px;
-    /*Movimentar o item vazio para baixo */
     border-radius: 3px;
-    background-image: url(https://i.scdn.co/image/ab67fb8200005caf194fec0fdc197fb9e4fe8e64);
-    /*Inserir a imagem no espaco*/
     background-size: cover;
-    /**/
     transform: rotate(30deg);
-    /*Rodar a imagem */
+    background-image: url(https://i.scdn.co/image/ab67fb8200005caf194fec0fdc197fb9e4fe8e64);
 }
 
 .cartaz:nth-of-type(6) {
     background-color: rgb(140, 25, 50);
-    position: relative;
-    color: white;
-    min-width: 200px;
-    min-height: 150px;
-    overflow: hidden;
-    padding: 20px;
 }
 
 .cartaz:nth-of-type(6)::after {
     content: "";
-    /*Criar um espaco vazio onde ser inserido a imagem*/
     position: absolute;
-    /*aqui o intem move se em relacao a heranca relativa do pai*/
     width: 100px;
-    /*Determinar a largura do espaco */
     height: 100px;
-    /*Determinar a altura do espaco */
     right: -20px;
-    /*Movimentar o item vazio a direira */
     bottom: -2px;
-    /*Movimentar o item vazio para baixo */
     border-radius: 3px;
-    background-image: url(https://i.scdn.co/image/ab67fb8200005caf73b2872e5a04da17bee68535);
-    /*Inserir a imagem no espaco*/
     background-size: cover;
-    /**/
     transform: rotate(30deg);
-    /*Rodar a imagem */
+    background-image: url(https://i.scdn.co/image/ab67fb8200005caf73b2872e5a04da17bee68535);
 }
 
 .cartaz:nth-of-type(7) {
     background-color: rgb(71, 125, 149);
-    position: relative;
-    color: white;
-    min-width: 200px;
-    min-height: 150px;
-    overflow: hidden;
-    padding: 20px;
 
 }
 
 .cartaz:nth-of-type(7)::after {
     content: "";
-    /*Criar um espaco vazio onde ser inserido a imagem*/
     position: absolute;
-    /*aqui o intem move se em relacao a heranca relativa do pai*/
     width: 100px;
-    /*Determinar a largura do espaco */
     height: 100px;
-    /*Determinar a altura do espaco */
     right: -20px;
-    /*Movimentar o item vazio a direira */
     bottom: -2px;
-    /*Movimentar o item vazio para baixo */
     border-radius: 3px;
-    background-image: url(https://i.scdn.co/image/ab67fb8200005caf66d545e6a69d0bfe8bd1e825);
-    /*Inserir a imagem no espaco*/
     background-size: cover;
-    /**/
     transform: rotate(30deg);
-    /*Rodar a imagem */
+    background-image: url(https://i.scdn.co/image/ab67fb8200005caf66d545e6a69d0bfe8bd1e825);
 }
 
 .cartaz:nth-of-type(8) {
@@ -545,629 +453,408 @@ a {
 
 .cartaz:nth-of-type(8)::after {
     content: "";
-    /*Criar um espaco vazio onde ser inserido a imagem*/
     position: absolute;
-    /*aqui o intem move se em relacao a heranca relativa do pai*/
     width: 100px;
-    /*Determinar a largura do espaco */
     height: 100px;
-    /*Determinar a altura do espaco */
     right: -20px;
-    /*Movimentar o item vazio a direira */
     bottom: -2px;
-    /*Movimentar o item vazio para baixo */
     border-radius: 3px;
-    background-image: url(https://i.scdn.co/image/ab67fb8200005caf5f3752b3234e724f9cd6056f);
-    /*Inserir a imagem no espaco*/
     background-size: cover;
-    /**/
     transform: rotate(30deg);
-    /*Rodar a imagem */
+    background-image: url(https://i.scdn.co/image/ab67fb8200005caf5f3752b3234e724f9cd6056f);
 }
 
 .cartaz:nth-of-type(9) {
     background-color: rgb(186, 93, 7);
-    position: relative;
-    color: white;
-    min-width: 200px;
-    min-height: 150px;
-    overflow: hidden;
-    padding: 20px;
+
 }
 
 .cartaz:nth-of-type(9)::after {
     content: "";
-    width: 100px;
-    /*Determinar a largura do espaco */
-    height: 100px;
-    /*Determinar a altura do espaco */
     position: absolute;
+    width: 100px;
+    height: 100px;
     right: -20px;
     bottom: -2px;
     border-radius: 3px;
-    background-image: url(https://i.scdn.co/image/ab67fb8200005caff4e38be86ca48a3b10884ae3);
     background-size: cover;
-    transform: rotate(20deg);
+    transform: rotate(30deg);
+    background-image: url(https://i.scdn.co/image/ab67fb8200005caff4e38be86ca48a3b10884ae3);
 }
 
 .cartaz:nth-of-type(10) {
     background-color: rgb(141, 103, 171);
-    position: relative;
-    color: white;
-    min-width: 200px;
-    min-height: 150px;
-    overflow: hidden;
-    padding: 20px;
 
 }
 
 .cartaz:nth-of-type(10)::after {
     content: "";
-    /*Criar um espaco vazio onde ser inserido a imagem*/
     position: absolute;
-    /*aqui o intem move se em relacao a heranca relativa do pai*/
     width: 100px;
-    /*Determinar a largura do espaco */
     height: 100px;
-    /*Determinar a altura do espaco */
     right: -20px;
-    /*Movimentar o item vazio a direira */
     bottom: -2px;
-    /*Movimentar o item vazio para baixo */
     border-radius: 3px;
-    background-image: url(https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg);
-    /*Inserir a imagem no espaco*/
     background-size: cover;
-    /**/
     transform: rotate(30deg);
-    /*Rodar a imagem */
+    background-image: url(https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg);
 }
 
 .cartaz:nth-of-type(11) {
     background-color: rgb(71, 125, 149);
-    position: relative;
-    color: white;
-    min-width: 200px;
-    min-height: 150px;
-    overflow: hidden;
-    padding: 20px;
 }
 
 .cartaz:nth-of-type(11)::after {
     content: "";
-    /*Criar um espaco vazio onde ser inserido a imagem*/
     position: absolute;
-    /*aqui o intem move se em relacao a heranca relativa do pai*/
     width: 100px;
-    /*Determinar a largura do espaco */
     height: 100px;
-    /*Determinar a altura do espaco */
     right: -20px;
-    /*Movimentar o item vazio a direira */
     bottom: -2px;
-    /*Movimentar o item vazio para baixo */
     border-radius: 3px;
-    background-image: url(https://i.scdn.co/image/ab67656300005f1fd464f18a416c86ede3a235a7);
-    /*Inserir a imagem no espaco*/
     background-size: cover;
-    /**/
     transform: rotate(30deg);
-    /*Rodar a imagem */
+    background-image: url(https://i.scdn.co/image/ab67656300005f1fd464f18a416c86ede3a235a7);
 }
 
 .cartaz:nth-of-type(12) {
     background-color: rgb(80, 55, 80);
-    position: relative;
-    color: white;
-    min-width: 200px;
-    min-height: 150px;
-    overflow: hidden;
-    padding: 20px;
 
 }
 
 .cartaz:nth-of-type(12)::after {
     content: "";
-    /*Criar um espaco vazio onde ser inserido a imagem*/
     position: absolute;
-    /*aqui o intem move se em relacao a heranca relativa do pai*/
     width: 100px;
-    /*Determinar a largura do espaco */
     height: 100px;
-    /*Determinar a altura do espaco */
     right: -20px;
-    /*Movimentar o item vazio a direira */
     bottom: -2px;
-    /*Movimentar o item vazio para baixo */
     border-radius: 3px;
-    background-image: url(https://i.scdn.co/image/ab6765630000ba8a2f514cde3ee9501e7ada4cf4);
-    /*Inserir a imagem no espaco*/
     background-size: cover;
-    /**/
     transform: rotate(30deg);
-    /*Rodar a imagem */
+    background-image: url(https://i.scdn.co/image/ab6765630000ba8a2f514cde3ee9501e7ada4cf4);
 }
 
 .cartaz:nth-of-type(13) {
     background-color: rgb(175, 40, 150);
-    position: relative;
-    color: white;
-    min-width: 200px;
-    min-height: 150px;
-    overflow: hidden;
-    padding: 20px;
 }
 
 .cartaz:nth-of-type(13)::after {
     content: "";
-    /*Criar um espaco vazio onde ser inserido a imagem*/
     position: absolute;
-    /*aqui o intem move se em relacao a heranca relativa do pai*/
-    width: 100px; /*Determinar a largura do espaco */
-    height: 100px; /*Determinar a altura do espaco */
-    right: -20px; /*Movimentar o item vazio a direira */
-    bottom: -2px; /*Movimentar o item vazio para baixo */
+    width: 100px;
+    height: 100px;
+    right: -20px;
+    bottom: -2px;
     border-radius: 3px;
-    background-image: url(https://i.scdn.co/image/ab6765630000ba8a77d267a5accb8911a92668e1); /*Inserir a imagem no espaco*/
-    background-size: cover; /**/
-    transform: rotate(30deg); /*Rodar a imagem */
+    background-size: cover;
+    transform: rotate(30deg);
+    background-image: url(https://i.scdn.co/image/ab6765630000ba8a77d267a5accb8911a92668e1);
 }
 
 .cartaz:nth-of-type(14) {
     background-color: rgb(220, 20, 140);
-    position: relative;
-    color: white;
-    min-width: 200px;
-    min-height: 150px;
-    overflow: hidden;
-    padding: 20px;
 }
 
 .cartaz:nth-of-type(14)::after {
-    content: "";/*Criar um espaco vazio onde ser inserido a imagem*/
-    position: absolute; /*aqui o intem move se em relacao a heranca relativa do pai*/
-    width: 100px; /*Determinar a largura do espaco */
-    height: 100px;/*Determinar a altura do espaco */
-    right: -20px; /*Movimentar o item vazio a direira */
-    bottom: -2px; /*Movimentar o item vazio para baixo */
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: -20px;
+    bottom: -2px;
     border-radius: 3px;
-    background-image: url(https://i.scdn.co/image/ab6765630000ba8a4dea4f05ebdb302fadd2c857);/*Inserir a imagem no espaco*/
     background-size: cover;
-    /**/
     transform: rotate(30deg);
-    /*Rodar a imagem */
+    background-image: url(https://i.scdn.co/image/ab6765630000ba8a4dea4f05ebdb302fadd2c857);
 }
 
 .cartaz:nth-of-type(15) {
     background-color: rgb(119, 119, 119);
-    position: relative;
-    color: white;
-    min-width: 200px;
-    min-height: 150px;
-    overflow: hidden;
-    padding: 20px;
+
 }
 
 .cartaz:nth-of-type(15)::after {
-    content: "";/*Criar um espaco vazio onde ser inserido a imagem*/
-    position: absolute; /*aqui o intem move se em relacao a heranca relativa do pai*/
-    width: 100px; /*Determinar a largura do espaco */
-    height: 100px;/*Determinar a altura do espaco */
-    right: -20px; /*Movimentar o item vazio a direira */
-    bottom: -2px; /*Movimentar o item vazio para baixo */
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: -20px;
+    bottom: -2px;
     border-radius: 3px;
-    background-image: url(https://i.scdn.co/image/ab67fb8200005caf6af6d83c78493644c9b0627b);
-    /*Inserir a imagem no espaco*/
     background-size: cover;
-    /**/
     transform: rotate(30deg);
-    /*Rodar a imagem */
+    background-image: url(https://i.scdn.co/image/ab67fb8200005caf6af6d83c78493644c9b0627b);
 }
 
 .cartaz:nth-of-type(16) {
     background-color: rgb(71, 125, 149);
-    position: relative;
-    color: white;
-    min-width: 200px;
-    min-height: 150px;
-    overflow: hidden;
-    padding: 20px;
+
 }
 
 .cartaz:nth-of-type(16)::after {
     content: "";
-    position: absolute; 
-    width: 100px; 
+    position: absolute;
+    width: 100px;
     height: 100px;
-    right: -20px; 
-    bottom: -2px; 
+    right: -20px;
+    bottom: -2px;
     border-radius: 3px;
-    background-size: cover; 
+    background-size: cover;
     transform: rotate(30deg);
-    background-image: url(hhttps://i.scdn.co/image/ab67fb8200005caf26ada793217994216c79dad8);/*Inserir a imagem no espaco*/
+    background-image: url(hhttps://i.scdn.co/image/ab67fb8200005caf26ada793217994216c79dad8);
+
 }
 
 .cartaz:nth-of-type(17) {
     background-color: rgb(225, 17, 140);
-    position: relative;
-    color: white;
-    min-width: 200px;
-    min-height: 150px;
-    overflow: hidden;
-    padding: 20px;
+
 }
 
 .cartaz:nth-of-type(17)::after {
-   content: "";/*Criar um espaco vazio onde ser inserido a imagem*/
-    position: absolute; /*aqui o intem move se em relacao a heranca relativa do pai*/
-    width: 100px; /*Determinar a largura do espaco */
-    height: 100px;/*Determinar a altura do espaco */
-    right: -20px; /*Movimentar o item vazio a direira */
-    bottom: -2px; /*Movimentar o item vazio para baixo */
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: -20px;
+    bottom: -2px;
     border-radius: 3px;
-    background-image: url(https://i.scdn.co/image/ab67fb8200005cafe542e9b59b1d2ae04b46b91c);
-    /*Inserir a imagem no espaco*/
     background-size: cover;
-    /**/
     transform: rotate(30deg);
-    /*Rodar a imagem */
+    background-image: url(https://i.scdn.co/image/ab67fb8200005cafe542e9b59b1d2ae04b46b91c);
 }
 
 .cartaz:nth-of-type(18) {
     background-color: rgb(233, 20, 41);
-    position: relative;
-    color: white;
-    min-width: 200px;
-    min-height: 150px;
-    overflow: hidden;
-    padding: 20px;
 }
 
 .cartaz:nth-of-type(18)::after {
-  content: "";/*Criar um espaco vazio onde ser inserido a imagem*/
-    position: absolute; /*aqui o intem move se em relacao a heranca relativa do pai*/
-    width: 100px; /*Determinar a largura do espaco */
-    height: 100px;/*Determinar a altura do espaco */
-    right: -20px; /*Movimentar o item vazio a direira */
-    bottom: -2px; /*Movimentar o item vazio para baixo */
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: -20px;
+    bottom: -2px;
     border-radius: 3px;
-    background-image: url(https://i.scdn.co/image/ab67fb8200005cafa1a252e3a815b65778d8c2aa);
-    /*Inserir a imagem no espaco*/
     background-size: cover;
-    /**/
     transform: rotate(30deg);
-    /*Rodar a imagem */
+    background-image: url(https://i.scdn.co/image/ab67fb8200005cafa1a252e3a815b65778d8c2aa);
 }
 
 .cartaz:nth-of-type(19) {
     background-color: rgb(141, 103, 171);
-    position: relative;
-    color: white;
-    min-width: 200px;
-    min-height: 150px;
-    overflow: hidden;
-    padding: 20px;
+
 
 }
 
 .cartaz:nth-of-type(19)::after {
-  content: "";/*Criar um espaco vazio onde ser inserido a imagem*/
-    position: absolute; /*aqui o intem move se em relacao a heranca relativa do pai*/
-    width: 100px; /*Determinar a largura do espaco */
-    height: 100px;/*Determinar a altura do espaco */
-    right: -20px; /*Movimentar o item vazio a direira */
-    bottom: -2px; /*Movimentar o item vazio para baixo */
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: -20px;
+    bottom: -2px;
     border-radius: 3px;
-    background-image: url(https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/dw/cover/en);
-    /*Inserir a imagem no espaco*/
     background-size: cover;
-    /**/
     transform: rotate(30deg);
-    /*Rodar a imagem */
+    background-image: url(https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/dw/cover/en);
 }
 
 .cartaz:nth-of-type(20) {
     background-color: rgb(13, 115, 236);
-    position: relative;
-    color: white;
-    min-width: 200px;
-    min-height: 150px;
-    overflow: hidden;
-    padding: 20px;
+
 
 }
 
 .cartaz:nth-of-type(20)::after {
-    content: "";/*Criar um espaco vazio onde ser inserido a imagem*/
-    position: absolute; /*aqui o intem move se em relacao a heranca relativa do pai*/
-    width: 100px; /*Determinar a largura do espaco */
-    height: 100px;/*Determinar a altura do espaco */
-    right: -20px; /*Movimentar o item vazio a direira */
-    bottom: -2px; /*Movimentar o item vazio para baixo */
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: -20px;
+    bottom: -2px;
     border-radius: 3px;
-    background-image: url(https://i.scdn.co/image/ab67fb8200005caf3a44e7ae3d808c220898185c);
-    /*Inserir a imagem no espaco*/
     background-size: cover;
-    /**/
     transform: rotate(30deg);
-    /*Rodar a imagem */
+    background-image: url(https://i.scdn.co/image/ab67fb8200005caf3a44e7ae3d808c220898185c);
 }
 
 .cartaz:nth-of-type(21) {
     background-color: rgb(216, 64, 0);
-    position: relative;
-    color: white;
-    min-width: 200px;
-    min-height: 150px;
-    overflow: hidden;
-    padding: 20px;
+
 }
 
 .cartaz:nth-of-type(21)::after {
-    content: "";/*Criar um espaco vazio onde ser inserido a imagem*/
-    position: absolute; /*aqui o intem move se em relacao a heranca relativa do pai*/
-    width: 100px; /*Determinar a largura do espaco */
-    height: 100px;/*Determinar a altura do espaco */
-    right: -20px; /*Movimentar o item vazio a direira */
-    bottom: -2px; /*Movimentar o item vazio para baixo */
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: -20px;
+    bottom: -2px;
     border-radius: 3px;
-    background-image: url(https://i.scdn.co/image/ab67fb8200005caf8573129e9a69a7482eca7879);
-    /*Inserir a imagem no espaco*/
     background-size: cover;
-    /**/
     transform: rotate(30deg);
-    /*Rodar a imagem */
+    background-image: url(https://i.scdn.co/image/ab67fb8200005caf8573129e9a69a7482eca7879);
 }
 
 .cartaz:nth-of-type(22) {
     background-color: rgb(0, 100, 80);
-    position: relative;
-    color: white;
-    min-width: 200px;
-    min-height: 150px;
-    overflow: hidden;
-    padding: 20px;
+
 }
 
 .cartaz:nth-of-type(22)::after {
     content: "";
-    /*Criar um espaco vazio onde ser inserido a imagem*/
     position: absolute;
-    /*aqui o intem move se em relacao a heranca relativa do pai*/
-    width: 120px;
-    /*Determinar a largura do espaco */
-    height: 120px;
-    /*Determinar a altura do espaco */
+    width: 100px;
+    height: 100px;
     right: -20px;
-    /*Movimentar o item vazio a direira */
     bottom: -2px;
-    /*Movimentar o item vazio para baixo */
     border-radius: 3px;
-    background-image: url(https://i.scdn.co/image/ab67fb8200005cafda4c849095796a9e5d2c4ddb);
-    /*Inserir a imagem no espaco*/
     background-size: cover;
-    /**/
     transform: rotate(30deg);
-    /*Rodar a imagem */
+    background-image: url(https://i.scdn.co/image/ab67fb8200005cafda4c849095796a9e5d2c4ddb);
 }
 
 .cartaz:nth-of-type(23) {
     background-color: rgb(230, 30, 50);
-    position: relative;
-    color: white;
-    min-width: 200px;
-    min-height: 150px;
-    overflow: hidden;
-    padding: 20px;
+
 }
 
 .cartaz:nth-of-type(23)::after {
-    content: "";/*Criar um espaco vazio onde ser inserido a imagem*/
-    position: absolute; /*aqui o intem move se em relacao a heranca relativa do pai*/
-    width: 100px; /*Determinar a largura do espaco */
-    height: 100px;/*Determinar a altura do espaco */
-    right: -20px; /*Movimentar o item vazio a direira */
-    bottom: -2px; /*Movimentar o item vazio para baixo */
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: -20px;
+    bottom: -2px;
     border-radius: 3px;
-    background-image: url(https://i.scdn.co/image/ab67fb8200005caf4b42030ee01cf793663dbb73);
-    /*Inserir a imagem no espaco*/
     background-size: cover;
-    /**/
     transform: rotate(30deg);
-    /*Rodar a imagem */
+    background-image: url(https://i.scdn.co/image/ab67fb8200005caf4b42030ee01cf793663dbb73);
 }
 
 .cartaz:nth-of-type(24) {
     background-color: rgb(30, 50, 100);
-    position: relative;
-    color: white;
-    min-width: 200px;
-    min-height: 150px;
-    overflow: hidden;
-    padding: 20px;
+
 }
 
 .cartaz:nth-of-type(24)::after {
-  content: "";/*Criar um espaco vazio onde ser inserido a imagem*/
-    position: absolute; /*aqui o intem move se em relacao a heranca relativa do pai*/
-    width: 100px; /*Determinar a largura do espaco */
-    height: 100px;/*Determinar a altura do espaco */
-    right: -20px; /*Movimentar o item vazio a direira */
-    bottom: -2px; /*Movimentar o item vazio para baixo */
-    border-radius: 3px;/*Inserir a imagem no espaco*/
-    background-size: cover;/**/
-    transform: rotate(30deg);/*Rodar a imagem */
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: -20px;
+    bottom: -2px;
+    border-radius: 3px;
+    background-size: cover;
+    transform: rotate(30deg);
     background-image: url(https://i.scdn.co/image/ab67fb8200005caf330ca3a3bfaf8b18407fb33e);
 }
 
 .cartaz:nth-of-type(25) {
     background-color: rgb(141, 103, 171);
-    position: relative;
-    color: white;
-    min-width: 200px;
-    min-height: 150px;
-    overflow: hidden;
-    padding: 20px;
 }
 
 .cartaz:nth-of-type(25)::after {
-    content: "";/*Criar um espaco vazio onde ser inserido a imagem*/
-    position: absolute; /*aqui o intem move se em relacao a heranca relativa do pai*/
-    width: 100px; /*Determinar a largura do espaco */
-    height: 100px;/*Determinar a altura do espaco */
-    right: -20px; /*Movimentar o item vazio a direira */
-    bottom: -2px; /*Movimentar o item vazio para baixo */
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: -20px;
+    bottom: -2px;
     border-radius: 3px;
-    /*Inserir a imagem no espaco*/
     background-size: cover;
-    /**/
     transform: rotate(30deg);
-    /*Rodar a imagem */
     background-image: url(https://i.scdn.co/image/ab67fb8200005caf1cef0cee1e498abb8e74955f);
 }
 
 .cartaz:nth-of-type(26) {
     background-color: rgb(81, 121, 161);
-    position: relative;
-    color: white;
-    min-width: 200px;
-    min-height: 150px;
-    overflow: hidden;
-    padding: 20px;
+
 }
 
 .cartaz:nth-of-type(26)::after {
-    content: "";/*Criar um espaco vazio onde ser inserido a imagem*/
-    position: absolute; /*aqui o intem move se em relacao a heranca relativa do pai*/
-    width: 100px; /*Determinar a largura do espaco */
-    height: 100px;/*Determinar a altura do espaco */
-    right: -20px; /*Movimentar o item vazio a direira */
-    bottom: -2px; /*Movimentar o item vazio para baixo */
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: -20px;
+    bottom: -2px;
     border-radius: 3px;
-    /*Inserir a imagem no espaco*/
     background-size: cover;
-    /**/
     transform: rotate(30deg);
-    /*Rodar a imagem */
     background-image: url(https://i.scdn.co/image/ab67fb8200005caf0b0d0bfac454671832311615);
 }
 
 .cartaz:nth-of-type(27) {
     background-color: rgb(13, 115, 236);
-    position: relative;
-    color: white;
-    min-width: 200px;
-    min-height: 150px;
-    overflow: hidden;
-    padding: 20px;
 
 }
 
 .cartaz:nth-of-type(27)::after {
     content: "";
-    /*Criar um espaco vazio onde ser inserido a imagem*/
     position: absolute;
-    /*aqui o intem move se em relacao a heranca relativa do pai*/
-    width: 120px;
-    /*Determinar a largura do espaco */
-    height: 120px;
-    /*Determinar a altura do espaco */
+    width: 100px;
+    height: 100px;
     right: -20px;
-    /*Movimentar o item vazio a direira */
     bottom: -2px;
-    /*Movimentar o item vazio para baixo */
     border-radius: 3px;
-    /*Inserir a imagem no espaco*/
     background-size: cover;
-    /**/
     transform: rotate(30deg);
-    /*Rodar a imagem */
     background-image: url(https://i.scdn.co/image/ab6765630000ba8a81f07e1ead0317ee3c285bfa);
 }
 
 .cartaz:nth-of-type(28) {
     background-color: rgb(20, 138, 8);
-    position: relative;
-    color: white;
-    min-width: 200px;
-    min-height: 150px;
-    overflow: hidden;
-    padding: 20px;
+
 }
 
 .cartaz:nth-of-type(28)::after {
     content: "";
-    /*Criar um espaco vazio onde ser inserido a imagem*/
     position: absolute;
-    /*aqui o intem move se em relacao a heranca relativa do pai*/
-    width: 120px;
-    /*Determinar a largura do espaco */
-    height: 120px;
-    /*Determinar a altura do espaco */
+    width: 100px;
+    height: 100px;
     right: -20px;
-    /*Movimentar o item vazio a direira */
     bottom: -2px;
-    /*Movimentar o item vazio para baixo */
     border-radius: 3px;
-    /*Inserir a imagem no espaco*/
     background-size: cover;
-    /**/
     transform: rotate(30deg);
-    /*Rodar a imagem */
     background-image: url(https://i.scdn.co/image/ab6765630000ba8a81f07e1ead0317ee3c285bfa);
 }
 
 .cartaz:nth-of-type(29) {
     background-color: rgb(125, 75, 50);
-    position: relative;
-    color: white;
-    min-width: 200px;
-    min-height: 150px;
-    overflow: hidden;
-    padding: 20px;
 
 }
 
 .cartaz:nth-of-type(29)::after {
     content: "";
-    /*Criar um espaco vazio onde ser inserido a imagem*/
     position: absolute;
-    /*aqui o intem move se em relacao a heranca relativa do pai*/
-    width: 120px;
-    /*Determinar a largura do espaco */
-    height: 120px;
-    /*Determinar a altura do espaco */
+    width: 100px;
+    height: 100px;
     right: -20px;
-    /*Movimentar o item vazio a direira */
     bottom: -2px;
-    /*Movimentar o item vazio para baixo */
-    border-radius: 3px; /*Inserir a imagem no espaco*/
-    background-size: cover;/**/
-    transform: rotate(30deg); /*Rodar a imagem */
+    border-radius: 3px;
+    background-size: cover;
+    transform: rotate(30deg);
     background-image: url(https://i.scdn.co/image/ab6765630000ba8a81f07e1ead0317ee3c285bfa);
 }
 
 .cartaz:nth-of-type(30) {
     background-color: blueviolet;
-    position: relative;
-    color: white;
-    min-width: 200px;
-    min-height: 150px;
-    overflow: hidden;
-    padding: 20px;
+
 }
 
 .cartaz:nth-of-type(30)::after {
     content: "";
-    /*Criar um espaco vazio onde ser inserido a imagem*/
-    position: absolute; /*aqui o intem move se em relacao a heranca relativa do pai*/
-    width: 100px;  /*Determinar a largura do espaco */
-    height: 100px; /*Determinar a altura do espaco */
-    right: -20px;  /*Movimentar o item vazio a direira */
-    bottom: -2px;  /*Movimentar o item vazio para baixo */
-    border-radius: 3px;/*Inserir a imagem no espaco*/
-    background-size: cover;/**/
-    transform: rotate(30deg);/*Rodar a imagem */
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: -20px;
+    bottom: -2px;
+    border-radius: 3px;
+    background-size: cover;
+    transform: rotate(30deg);
     background-image: url(https://i.scdn.co/image/ab6765630000ba8a81f07e1ead0317ee3c285bfa);
 }
 
@@ -1183,3 +870,10 @@ a {
 .inf a {
     display: block;
 }
+
+.footer-secound {
+    height: 20rem;
+    justify-content: center;
+    
+}
+
