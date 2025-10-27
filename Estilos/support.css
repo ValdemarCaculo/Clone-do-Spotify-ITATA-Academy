@@ -7,7 +7,8 @@
     align-items: center;
     font-weight: bold;
     font-size: 1rem;
-    height: 4rem;
+    height: 4.6rem;
+    margin: 0 40px;
 
 }
 
@@ -32,6 +33,16 @@ nav {
     display: flex;
     align-items: center;
 }
+nav a{
+    color: var(--cor-textos);
+    text-decoration: none;
+}
+
+.header-left span:hover{
+font-size: large;
+cursor: pointer;
+
+}
 
 .registo {
     color: var(--cor-textos);
@@ -45,4 +56,21 @@ nav {
 main {
     background-color: var(--cinza);
     height: 100vh;
+}
+
+main{
+    max-width: 628px;
+    background-color: red;
+    height: 500px;
+    display: flex;
+   margin: 0 auto;
+   box-sizing: border-box;
+    
+}
+
+.formulario{
+    display: flex;
+ 
+    background-color: blue;
+   
 }

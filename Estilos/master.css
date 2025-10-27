@@ -21,6 +21,13 @@
     font-family: sans-serif; 
 
 }
+#logo,
+#home {
+    width: 35px;
+    margin: 8px;
+    padding: 3px;
+}
+
 
 body {
 
