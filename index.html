@@ -38,7 +38,8 @@
                         <img id="home" src="/icons/casa.png" alt="Home">
                     </a>
 
-                    <input type="search" placeholder="  What do you want to play ?">
+               <input type="search" placeholder="What do you want to play ?" id="searchInput">
+
                 </div>
 
                 <ul class="nav-links">
@@ -254,23 +255,9 @@
         </section>
     </main>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const btnLogout = document.getElementById('btn-logout');
-            
-            if(btnLogout) {
-                btnLogout.addEventListener('click', function(event) {
-                    event.preventDefault();
-                    
-                    // Confirmar logout
-                    if(confirm('Tem certeza que deseja terminar a sessão?')) {
-                        localStorage.removeItem('usuarioLogado');
-                        window.location.href = 'login.html';
-                    }
-                });
-            }
-        });
-    </script>
+    <script src="./Js/logOut.js"></script>
+    <script src="./Js/deexerApi.js"></script>
+    <script src="./Js/busca.js"></script>
 
 </body>
 

@@ -84,7 +84,7 @@ li a:hover {
 
 .header-btn button:hover {
     font-size: larger;
-    color: var(--cor-textos);
+    color: black;
 }
 
 .header-btn button a {
