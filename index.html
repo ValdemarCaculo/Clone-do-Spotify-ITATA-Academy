@@ -11,6 +11,16 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=pageview" />
+        <script>
+        (function() {
+            const usuarioLogado = localStorage.getItem('usuarioLogado');
+
+            if (!usuarioLogado) {
+                alert("Acesso restrito. Por favor, faça login para continuar.");
+                window.location.href = "login.html";
+            }
+        })();
+    </script> 
 
 </head>
 
@@ -45,9 +55,11 @@
                         </a>
                     </button>
 
-                    <button class="btn-sign">Sign up</button>
+                   <!-- 
+                    <button class="btn-sign"><a href="/signup.html">Sign Up</a></button>
 
-                    <button class="btn-login"><a href="login.html">Log in</a></button>
+                    --> 
+                    <button id="btn-logout" class="btn-logout">Terminar Sessão</button>
                 </div>
 
 
@@ -242,6 +254,23 @@
         </section>
     </main>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const btnLogout = document.getElementById('btn-logout');
+            
+            if(btnLogout) {
+                btnLogout.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    
+                    // Confirmar logout
+                    if(confirm('Tem certeza que deseja terminar a sessão?')) {
+                        localStorage.removeItem('usuarioLogado');
+                        window.location.href = 'login.html';
+                    }
+                });
+            }
+        });
+    </script>
 
 </body>
 
